@@ -8,5 +8,10 @@ export class Galactic {
     this.birthday = new Date(birthday);
   }
 
-  
+  getAge() {
+    let currentDate = new Galactic();
+    let currentYear = currentDate.getFullYear();
+    let age = currentYear - (this.birthday.GetFullYear());
+    return age;
+  }
 }
