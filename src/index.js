@@ -3,10 +3,10 @@ class Galactic {
     this.birthday = new Date(birthday);
   }
 
-  getEarthAge() {
-    let currentDate = new Date();
+  GetEarthAge(date) {
+    let currentDate = new Date(date);
     let currentYear = currentDate.getFullYear();
-    let age = currentYear - (this.birthday.GetFullYear());
+    let age = currentYear - (this.birthday.getFullYear());
     return age;
   }
 
