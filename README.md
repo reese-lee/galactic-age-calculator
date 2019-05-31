@@ -21,8 +21,7 @@ _This is a program that will calculate a person's age in Earth years, Mercury ye
 | ------------- |:-------------:| :-----:|
 | Take in a user's birthday | June 5, 1992 | - |
 | Calculates their age in Earth years | June 5, 1992 | 27 Earth years |
-| Calculates their age in Mercury years | June 5, 1992 | 112 Mercury years
-|
+| Calculates their age in Mercury years | June 5, 1992 | 112 Mercury years |
 | Calculates their age in Venus years | June 5, 1992 | |
 | Calculates their age in Mars years | June 5, 1992 | |
 | Calculates their age in Jupiter years | June 5, 1992 | |
