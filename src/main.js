@@ -1,17 +1,12 @@
-// import $ from 'jquery';
-// import 'bootstrap';
-// import 'bootstrap/scss/bootstrap.scss';
-// import './sass/styles.scss';
-//
-export class Galactic {
-  constructor(birthday) {
-    this.birthday = new Date(birthday);
-  }
+import { Galactic } from './galactic.js';
+import $ from 'jquery';
 
-  getAge() {
-    let currentDate = new Galactic();
-    let currentYear = currentDate.getFullYear();
-    let age = currentYear - (this.birthday.GetFullYear());
-    return age;
-  }
-}
+$(document).ready(function() {
+  $("form#dayDate").submit(function(event) {
+    event.preventDefault();
+    let birthday = $("form#dayDate").val().toString();
+    let dateSolver = new Galactic(birthday);
+    let results = dateSolver.dayFinder(birthday);
+    $("#result").text(results).show();
+  });
+});
