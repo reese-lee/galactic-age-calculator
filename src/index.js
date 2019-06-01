@@ -5,28 +5,30 @@ class Galactic {
 
   GetEarthAge(date) {
     let currentDate = new Date(date);
-    let currentYear = currentDate.getFullYear();
-    let age = currentYear - (this.birthday.getFullYear());
+    let currentYear = currentDate.getUTCFullYear();
+    let age = currentYear - (this.birthday.getUTCFullYear());
     return age;
   }
 
-  // getMercuryAge() {
-  //
-  // }
-  //
-  // getVenusAge() {
-  //
-  // }
-  //
-  // getMarsAge() {
-  //
-  // }
-  //
-  // getJupiterAge() {
-  //
-  // }
+  getMercuryAge() {
+    let mercuryAge = Math.floor(age / .24);
+  }
+
+  getVenusAge() {
+    let venusAge = Math.floor(age / .62);
+  }
+
+  getMarsAge() {
+    let marsAge = Math.floor(age / 1.88);
+  }
+
+  getJupiterAge() {
+    let jupiterAge = Math.floor(age / 11.86);
+  }
 
 
 
 }
-module.exports = Galactic;
+module.exports = {
+  Galactic:Galactic
+}
