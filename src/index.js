@@ -22,13 +22,17 @@ class Galactic {
     return venusAge;
   }
 
-  // getMarsAge() {
-  //   let marsAge = Math.floor(age / 1.88);
-  // }
-  //
-  // getJupiterAge() {
-  //   let jupiterAge = Math.floor(age / 11.86);
-  // }
+  GetMarsAge() {
+    let age = this.GetEarthAge();
+    let marsAge = Math.floor(age / 1.88);
+    return marsAge;
+  }
+
+  GetJupiterAge() {
+    let age = this.GetEarthAge();
+    let jupiterAge = Math.floor(age / 11.86);
+    return jupiterAge;
+  }
 
 
 
