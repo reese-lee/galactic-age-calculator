@@ -16,10 +16,12 @@ class Galactic {
     return mercuryAge;
   }
 
-  // getVenusAge() {
-  //   let venusAge = Math.floor(age / .62);
-  // }
-  //
+  GetVenusAge() {
+    let age = this.GetEarthAge();
+    let venusAge = Math.floor(age / .62);
+    return venusAge;
+  }
+
   // getMarsAge() {
   //   let marsAge = Math.floor(age / 1.88);
   // }
