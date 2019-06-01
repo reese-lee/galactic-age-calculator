@@ -2,15 +2,15 @@ import { Galactic } from './../src/index.js';
 
 describe('Galactic', function() {
 
-  it('should test whether a birthday creates an instance of the Date object', function() {
-    let test = new Date("06, 05, 1992");
-    expect(test.getDay()).toEqual(5);
+  it('should test whether a Galactic object is created', function() {
+    const dob = new Galactic(new Date(1992, 5, 2));
+    expect(typeof dob).toEqual(typeof new Galactic);
   });
 
   it('should test whether it will return correct Earth age', function() {
-    let test = new Galactic();
-    let testBirthday = test.birthday("06, 05, 1992");
-    let testAge = testBirthday.GetEarthAge(testBirthday);
+    let test = new Galactic(new Date("06,05,1992"));
+    let testBirthday = test.birthday;
+    let testAge = test.GetEarthAge(testBirthday);
     expect(testAge).toEqual(26);
   });
 
