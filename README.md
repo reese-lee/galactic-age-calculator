@@ -21,10 +21,10 @@ _This is a program that will calculate a person's age in Earth years, Mercury ye
 | ------------- |:-------------:| :-----:|
 | Take in a user's birthday | June 5, 1992 | - |
 | Calculates their age in Earth years | June 5, 1992 | 27 Earth years |
-| Calculates their age in Mercury years | June 5, 1992 | 112 Mercury years |
-| Calculates their age in Venus years | June 5, 1992 | |
-| Calculates their age in Mars years | June 5, 1992 | |
-| Calculates their age in Jupiter years | June 5, 1992 | |
+| Calculates their age in Mercury years | June 5, 1992 | 112 Mercurian years |
+| Calculates their age in Venus years | June 5, 1992 | 43 Venusian years |
+| Calculates their age in Mars years | June 5, 1992 | 14 Martian years |
+| Calculates their age in Jupiter years | June 5, 1992 | 2 Jovian years |
 | Takes in a user's demographic | Asian American | - |
 | Calculates their years left to live on Earth | June 5, 1992 |  |
 | Calculates their years left to live on Mercury | June 5, 1992 |  |
@@ -44,7 +44,7 @@ _Should any problems occur, or any bugs discovered, please contact Reese at rees
 
 ## Technologies Used
 
-_This program was written in JavaScript and tested using Jasmine and Karma.
+_This program was written in JavaScript and tested using Jasmine and Karma._
 
 ### License
 
