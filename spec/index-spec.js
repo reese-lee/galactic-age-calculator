@@ -22,16 +22,17 @@ describe('Galactic', function() {
   it('should test whether it will return age in Mercury years', function() {
     let test = new Galactic(new Date(1992, 5, 2));
     let testBirthday = test.birthday;
-    // let testAge = test.GetEarthAge(testBirthday);
     let mercuryAge = test.GetMercuryAge(testBirthday);
     expect(mercuryAge).toEqual(112);
   });
 
-  // it('should test whether it will return age in Venus years', function() {
-  //
-  //   expect().toEqual();
-  // });
-  //
+  it('should test whether it will return age in Venus years', function() {
+    let test = new Galactic(new Date(1992, 5, 2));
+    let testBirthday = test.birthday;
+    let venusAge = test.GetVenusAge(testBirthday);
+    expect(venusAge).toEqual(43);
+  });
+
   // it('should test whether it will return age in Mars years', function() {
   //
   //   expect().toEqual();
