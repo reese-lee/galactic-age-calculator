@@ -19,6 +19,12 @@ describe('Galactic', function() {
     expect(testAge).toEqual(27);
   });
 
+  it('should test whether it will return correct Earth life expectancy', function() {
+    let test = new Galactic(new Date(1992, 5, 2));
+    let yearsLeft = test.GetLifeEarth();
+    expect(yearsLeft).toEqual(44.5);
+  });
+
   it('should test whether it will return age in Mercury years', function() {
     let test = new Galactic(new Date(1992, 5, 2));
     let testBirthday = test.birthday;
@@ -37,13 +43,13 @@ describe('Galactic', function() {
     let test = new Galactic(new Date(1992, 5, 2));
     let testBirthday = test.birthday;
     let venusAge = test.GetVenusAge(testBirthday);
-    expect().toEqual();
+    expect(venusAge).toEqual(43);
   });
 
   it('should test whether it will return age in Jupiter years', function() {
-   let test = new Galactic(new Date(1992, 5, 2));
-      let testBirthday = test.birthday;
-      let jupiterAge = test.GetJupiterAge(testBirthday);
+    let test = new Galactic(new Date(1992, 5, 2));
+    let testBirthday = test.birthday;
+    let jupiterAge = test.GetJupiterAge(testBirthday);
     expect(jupiterAge).toEqual(2);
   });
 
