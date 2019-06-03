@@ -21,10 +21,20 @@ class Galactic {
     return mercuryAge;
   }
 
+  GetLifeMercury() {
+    let yearsLeft = 298 - this.GetMercuryAge();
+    return yearsLeft;
+  }
+
   GetVenusAge() {
     let age = this.GetEarthAge();
     let venusAge = Math.floor(age / .62);
     return venusAge;
+  }
+
+  GetLifeVenus() {
+    let yearsLeft = 115 - this.GetVenusAge();
+    return yearsLeft;
   }
 
   GetMarsAge() {
