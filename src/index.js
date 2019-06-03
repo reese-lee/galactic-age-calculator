@@ -10,6 +10,11 @@ class Galactic {
     return age;
   }
 
+  GetLifeEarth() {
+    let yearsLeft = 71.5 - this.GetEarthAge();
+    return yearsLeft;
+  }
+
   GetMercuryAge() {
     let age = this.GetEarthAge();
     let mercuryAge = Math.floor(age / .24);
@@ -34,9 +39,8 @@ class Galactic {
     return jupiterAge;
   }
 
-
-
 }
+
 module.exports = {
   Galactic:Galactic
 }
