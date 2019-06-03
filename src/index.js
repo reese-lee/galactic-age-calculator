@@ -43,12 +43,21 @@ class Galactic {
     return marsAge;
   }
 
+  GetLifeMars() {
+    let yearsLeft = 38 - this.GetMarsAge();
+    return yearsLeft;
+  }
+
   GetJupiterAge() {
     let age = this.GetEarthAge();
     let jupiterAge = Math.floor(age / 11.86);
     return jupiterAge;
   }
 
+  GetLifeJupiter() {
+    let yearsLeft = 6 - this.GetJupiterAge();
+    return yearsLeft;
+  }
 }
 
 module.exports = {
