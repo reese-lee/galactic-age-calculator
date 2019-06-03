@@ -58,11 +58,11 @@ describe('Galactic', function() {
     expect(marsAge).toEqual(14);
   });
 
-  // it('should test whether it will return correct years left on Mars', function() {
-  //   let test = new Galactic(new Date(1992, 5, 2));
-  //   let yearsLeft = test.GetMarsMercury();
-  //   expect(yearsLeft).toEqual();
-  // });
+  it('should test whether it will return correct years left on Mars', function() {
+    let test = new Galactic(new Date(1992, 5, 2));
+    let yearsLeft = test.GetLifeMars();
+    expect(yearsLeft).toEqual(24);
+  });
 
   it('should test whether it will return age in Jupiter years', function() {
     let test = new Galactic(new Date(1992, 5, 2));
@@ -71,30 +71,10 @@ describe('Galactic', function() {
     expect(jupiterAge).toEqual(2);
   });
 
-  // it('should test whether it will return correct years left on Jupiter', function() {
-  //   let test = new Galactic(new Date(1992, 5, 2));
-  //   let yearsLeft = test.GetJupiterMercury();
-  //   expect(yearsLeft).toEqual(186);
-  // });
-
-  // it('should test whether it will return life expectancy in Mercury years', function() {
-  //
-  //   expect().toEqual();
-  // });
-  //
-  // it('should test whether it will return life expectancy in Venus years', function() {
-  //
-  //   expect().toEqual();
-  // });
-  //
-  // it('should test whether it will return life expectancy in Mars years', function() {
-  //
-  //   expect().toEqual();
-  // });
-  //
-  // it('should test whether it will return life expectancy in Jupiter years', function() {
-  //
-  //   expect().toEqual();
-  // });
+  it('should test whether it will return correct years left on Jupiter', function() {
+    let test = new Galactic(new Date(1992, 5, 2));
+    let yearsLeft = test.GetLifeJupiter();
+    expect(yearsLeft).toEqual(4);
+  });
 
 });
