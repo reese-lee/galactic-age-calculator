@@ -11,7 +11,12 @@ class Galactic {
   }
 
   GetLifeEarth() {
-    let yearsLeft = 71.5 - this.GetEarthAge();
+    let age = this.GetEarthAge();
+    let yearsLeft = 71.5 - age;
+    if(age > 71.5) {
+      let yearsOver = age -71.5;
+      return yearsOver;
+    }
     return yearsLeft;
   }
 
@@ -22,7 +27,12 @@ class Galactic {
   }
 
   GetLifeMercury() {
-    let yearsLeft = 298 - this.GetMercuryAge();
+    let age = this.GetMercuryAge();
+    let yearsLeft = 298 - age;
+    if(age > 298) {
+      let yearsOver = age -298;
+      return yearsOver;
+    }
     return yearsLeft;
   }
 
@@ -33,7 +43,12 @@ class Galactic {
   }
 
   GetLifeVenus() {
-    let yearsLeft = 115 - this.GetVenusAge();
+    let age = this.GetVenusAge();
+    let yearsLeft = 115 - age;
+    if(age > 115) {
+      let yearsOver = age -115;
+      return yearsOver;
+    }
     return yearsLeft;
   }
 
@@ -44,7 +59,12 @@ class Galactic {
   }
 
   GetLifeMars() {
-    let yearsLeft = 38 - this.GetMarsAge();
+    let age = this.GetMarsAge();
+    let yearsLeft = 38 - age;
+    if(age > 38) {
+      let yearsOver = age -38;
+      return yearsOver;
+    }
     return yearsLeft;
   }
 
@@ -55,7 +75,12 @@ class Galactic {
   }
 
   GetLifeJupiter() {
-    let yearsLeft = 6 - this.GetJupiterAge();
+    let age = this.GetJupiterAge();
+    let yearsLeft = 6 - age;
+    if(age > 6) {
+      let yearsOver = age - 6;
+      return yearsOver;
+    }
     return yearsLeft;
   }
 }
