@@ -11,11 +11,11 @@ _This is a program that will calculate a person's age in Earth years, Mercury ye
 
 * _Open [repo](https://github.com/reese-lee/galactic-age-calculator.git)._
 * _Clone repo._
-* _In your terminal command line, run *npm install*._
-* _Run *npm run build*._
-* _Run *npm run start*._
+* _In your terminal command line, run $*npm install*._
+* _Run $*npm run build*._
+* _Run $*npm run start*._
 
-## Specs - "Landing Page" - Index.js
+## Specs
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| :-----:|
@@ -25,17 +25,17 @@ _This is a program that will calculate a person's age in Earth years, Mercury ye
 | Calculates their age in Venus years | June 5, 1992 | 43 Venusian years |
 | Calculates their age in Mars years | June 5, 1992 | 14 Martian years |
 | Calculates their age in Jupiter years | June 5, 1992 | 2 Jovian years |
-| Takes in a user's demographic | Asian American | - |
-| Calculates their years left to live on Earth | June 5, 1992 |  |
-| Calculates their years left to live on Mercury | June 5, 1992 |  |
-| Calculates their years left to live on Venus | June 5, 1992 |  |
-| Calculates their years left to live on Mars | June 5, 1992 |  |
-| Calculates their years left to live on Jupiter | June 5, 1992 |  |
+| Calculates their years left or extra years lived on Earth | June 5, 1944 | 3.5 |
+| Calculates their years left or extra years lived on Mercury | June 5, 1944 | 14 |
+| Calculates their years left or extra years lived on Venus | June 5, 1992 | 72 |
+| Calculates their years left or extra years lived on Mars | June 5, 1992 | 24 |
+| Calculates their years left or extra years lived on Jupiter | June 5, 1992 | 4 |
 
 
 ## Known Bugs
 
-*
+* _Does not take into account months. If a user's birthday has not yet happened for the year, it will return the age they will become, not their current age._
+* _For years left or bonus years lived on Jupiter, it will only return round numbers, so it is not highly accurate._
 
 
 ## Support and contact details
