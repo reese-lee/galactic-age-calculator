@@ -22,6 +22,8 @@ describe('Galactic', function() {
   it('should test whether it will return correct years left or extra years lived on Earth', function() {
     let test = new Galactic(new Date(1944, 5, 2));
     let yearsOver = test.GetLifeEarth();
+    // let planetName = .val();
+    // test.GetAgeOnPlanet(planetName);
     expect(yearsOver).toEqual(3.5);
   });
 
@@ -34,7 +36,7 @@ describe('Galactic', function() {
 
   it('should test whether it will return correct years left or extra years lived on Mercury', function() {
     let test = new Galactic(new Date(1944, 5, 2));
-    let yearsOver = test.GetLifeMercury();
+    let yearsOver = test.GetAgeOnPlanet("mercury");
     expect(yearsOver).toEqual(14);
   });
 

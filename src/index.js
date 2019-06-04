@@ -1,3 +1,12 @@
+// what you could do in FE:
+// let array = ['mercury', 'venus'];
+// newArray = [];
+// array.forEach((planet) => {
+//   newArray.push(GetAgeOnPlanet(planet));
+  
+// })
+// return newArray;
+
 class Galactic {
   constructor(birthday) {
     this.birthday = new Date(birthday);
@@ -20,11 +29,25 @@ class Galactic {
     return yearsLeft;
   }
 
-  GetMercuryAge() {
-    let age = this.GetEarthAge();
-    let mercuryAge = Math.floor(age / .24);
-    return mercuryAge;
+  GetPlanetCoefficient(planet) {
+    const planetData = {
+      "mercury": .24,
+      "venus": .78
+    }
+    return planetData[planet];
   }
+
+  GetAgeOnPlanet(planet) {
+    let age = this.GetEarthAge();
+    let ageOnPlanet = Math.floor(age / GetPlanetCoefficient(planet));
+    return ageOnPlanet;
+  }
+
+  // GetMercuryAge() {
+  //   let age = this.GetEarthAge();
+  //   let mercuryAge = Math.floor(age / .24);
+  //   return mercuryAge;
+  // }
 
   GetLifeMercury() {
     let age = this.GetMercuryAge();
@@ -36,11 +59,11 @@ class Galactic {
     return yearsLeft;
   }
 
-  GetVenusAge() {
-    let age = this.GetEarthAge();
-    let venusAge = Math.floor(age / .62);
-    return venusAge;
-  }
+  // GetVenusAge() {
+  //   let age = this.GetEarthAge();
+  //   let venusAge = Math.floor(age / .62);
+  //   return venusAge;
+  // }
 
   GetLifeVenus() {
     let age = this.GetVenusAge();
@@ -52,11 +75,11 @@ class Galactic {
     return yearsLeft;
   }
 
-  GetMarsAge() {
-    let age = this.GetEarthAge();
-    let marsAge = Math.floor(age / 1.88);
-    return marsAge;
-  }
+  // GetMarsAge() {
+  //   let age = this.GetEarthAge();
+  //   let marsAge = Math.floor(age / 1.88);
+  //   return marsAge;
+  // }
 
   GetLifeMars() {
     let age = this.GetMarsAge();
@@ -68,11 +91,11 @@ class Galactic {
     return yearsLeft;
   }
 
-  GetJupiterAge() {
-    let age = this.GetEarthAge();
-    let jupiterAge = Math.floor(age / 11.86);
-    return jupiterAge;
-  }
+  // GetJupiterAge() {
+  //   let age = this.GetEarthAge();
+  //   let jupiterAge = Math.floor(age / 11.86);
+  //   return jupiterAge;
+  // }
 
   GetLifeJupiter() {
     let age = this.GetJupiterAge();
